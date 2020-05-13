@@ -2,25 +2,19 @@
 
 ## Usage
 
-Exploit Options:
+### Exploit Options:
 
-SESSION => Current meterpreter session for unprivileged user.
-
-USERNAME => This is the username for an unprivileged user.
-
-PASSWORD => This is the password for the same unprivileged user.
-
-DOMAIN => This is the domain name the unprivileged user is under.
-
-DLLPATH => This is a local path to the meterpreter reverse tcp dll.
+- SESSION => Current meterpreter session for unprivileged user.
+- USERNAME => This is the username for an unprivileged user.
+- PASSWORD => This is the password for the same unprivileged user.
+- DOMAIN => This is the domain name the unprivileged user is under.
+- DLLPATH => This is a local path to the meterpreter reverse tcp dll.
 
 Be sure to set PAYLOAD to a second stage meterpreter reverse tcp for the elevated connect back with:
 
-PAYLOAD => exploit/windows/meterpreter/reverse_tcp
-
-LHOST => Same LHOST as used for DLL
-
-LPORT => Same LPORT as used for DLL
+- PAYLOAD => exploit/windows/meterpreter/reverse_tcp
+- LHOST => Same LHOST as used for DLL
+- LPORT => Same LPORT as used for DLL
 
 ## Generating DLL
 
